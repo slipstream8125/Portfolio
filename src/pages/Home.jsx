@@ -1,6 +1,7 @@
-import Button from '@mui/material/Button';
+import {Button} from '@nextui-org/react';
 import './Home.css'
 import img from './images/img.jpg'
+import { motion } from 'framer-motion';
 const Image=()=>(
   <div>
     <img src={img} class="profile"></img>
@@ -17,23 +18,23 @@ const Name=()=>(
 
 const Skills=()=>(
     <div class='flexbox'>
-    <div><Button variant="contained" class='element'>HTML</Button></div>
-    <div><Button variant="contained" class='element'>CSS</Button></div>
-    <div><Button variant="contained" class='element'>JS</Button></div>
-    <div><Button variant="contained" class='element'>Bash</Button></div>
-    <div><Button variant="contained" class='element'>Linux</Button></div>
-    <div><Button variant="contained" class='element'>C++</Button></div>
-    <div><Button variant="contained" class='element'>Java</Button></div>
-    <div><Button variant="contained" class='element'>Python</Button></div>
-    <div><Button variant="contained" class='element'>C</Button></div>
+    <div><Button variant="shadow" size="lg" color="primary" className="mx-1">HTML</Button></div>
+    <div><Button variant="shadow" size="lg" color="primary" className="mx-1">CSS</Button></div>
+    <div><Button variant="shadow" size="lg"  color="primary" className="mx-1">JS</Button></div>
+    <div><Button variant="shadow" size="lg" color="primary" className="mx-1">Bash</Button></div>
+    <div><Button variant="shadow" size="lg" color="primary" className="mx-1">Linux</Button></div>
+    <div><Button variant="shadow" size="lg" color="primary" className="mx-1">C++</Button></div>
+    <div><Button variant="shadow" size="lg" color="primary" className="mx-1">Java</Button></div>
+    <div><Button variant="shadow" size="lg" color="primary" className="mx-1">Python</Button></div>
+    <div><Button variant="shadow" size="lg" color="primary" className="mx-1">C</Button></div>
   </div>
 )
 export const Home=()=>{
     return(
-        <div class="maindiv bg-slate-900">
+        <motion.div class="maindiv bg-slate-900" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.7}} >
             <Image/>
             <Name/>
             <Skills/>
-        </div>
+        </motion.div>
     )
 }
