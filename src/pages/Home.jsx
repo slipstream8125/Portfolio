@@ -19,7 +19,6 @@ const Intro=()=>(
 		<p>Hi, I am Dhruv Hatkar, a student at VIT Chennai.</p>
 		<p>My interests include Linux Administration and Frontend Web Development.</p>
 		<p>My hobbies are reading books and playing with Linux in my free time.</p>
-
 	</div>
 )
 export const Home=()=>{
