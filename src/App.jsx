@@ -14,7 +14,7 @@ function App() {
     <div className="App" >
       <Router>
         <Navbar/>
-		{/*<AnimatePresence>*/}
+		<AnimatePresence>
         <Routes>
 			<Route path='/' element={<Home/>} transition="fade" easing="easeInOutQuad" />
 			<Route path='/skills' element={<Skills/>}/>
@@ -22,7 +22,7 @@ function App() {
 			<Route path='/contact' element={<Contact/>}/>
 			<Route path='*' element={<h1 className="text-3xl font-bold text-red-500 underline">Error 404 : Page Not Found</h1>}/>
         </Routes>
-		{/*</AnimatePresence>*/}
+		</AnimatePresence>
       </Router>
     </div>
   );
