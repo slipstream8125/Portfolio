@@ -1,4 +1,5 @@
 import React from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import ReactDOM from 'react-dom/client';
 import {NextUIProvider} from '@nextui-org/react'
 import './index.css';
