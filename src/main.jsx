@@ -12,6 +12,7 @@ root.render(
 	<NextUIProvider>
 		<main className="dark text-foreground bg-slate-500">
 			<App />
+			<SpeedInsights />
 		</main>
 	</NextUIProvider>
   </React.StrictMode>
